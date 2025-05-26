@@ -12,6 +12,12 @@ pipeline{
       steps{
 
         echo 'executing npm . ..'
+        nodejs('Node22.11.0'){
+
+           sh 'npm install'
+
+        }
+       
 
 
       }
